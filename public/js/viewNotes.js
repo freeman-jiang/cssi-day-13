@@ -65,8 +65,8 @@ const editNote = (noteId) => {
     const note = data[noteId]
     document.querySelector('#editTitleInput').value = note.title
     document.querySelector('#editTextInput').value = note.text
+    document.querySelector('#editNoteId').value = noteId
   })
-  
 }
 
 const closeEditModal = () => {
@@ -77,12 +77,11 @@ const closeEditModal = () => {
 const saveEditedNote = () => {
   const title = document.querySelector('#editTitleInput').value
   const text = document.querySelector('#editTextInput').value
+  const noteId = document.querySelector('#editNoteId').value
   const updatedNote = {
     title,
     text
   }
-  console.log(updatedNote);
-
-
   firebase.database().ref(`users/${googleUserId}/${noteId}`).update(updatedNote)
+  closeEditModal()
 }

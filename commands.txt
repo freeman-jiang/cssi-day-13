@@ -1,7 +1,7 @@
 GIT:
 git add --all && git commit -m "MY COMMIT MESSAGE" && git push
 
-git add --all && git commit -m "Modal and delete functionality working" && git push
+git add --all && git commit -m "CRUD working" && git push
 
 START:
 firebase emulators:start --only hosting
