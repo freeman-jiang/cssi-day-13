@@ -1,4 +1,4 @@
-# Fire Notes Application
+# Fire Notes
 ## About
 Built during Google CSSI 2021 to learn Firebase
 
