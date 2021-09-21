@@ -2,6 +2,8 @@
 ## About
 Built during Google CSSI 2021 to learn Firebase
 
+**Technologies:** Firebase (Real-Time Database & Authentication), Bulma, HTML, CSS, JS
+
 ## Hosted App
 https://fire-notes-56420.web.app/
 
